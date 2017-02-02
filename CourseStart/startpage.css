@@ -11,8 +11,6 @@
 #videoWrap,
 #swayWrap,
 #officeWrap {
-	margin: 0 -9999rem;
-	padding: 0.25rem 9999rem;
 	padding-top: 5rem;
     padding-bottom: 10rem;
 }
