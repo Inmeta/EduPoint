@@ -4,7 +4,7 @@ var gulpSequence = require('gulp-sequence');
 var watch = require('gulp-watch');
 var paths = {   
     sp_ptassets_dev:"Q:\\", 
-    dev:"Q:\\Apps\\CourseStart", 
+    dev:"Q:\\Apps\\Dashboard", 
   
 }
 
@@ -19,12 +19,12 @@ gulp.task("distribute", function() {
     .pipe(gulp.dest(paths.dev));
     gulp.src("./bundle.js")
     .pipe(gulp.dest(paths.dev));
-     gulp.src("./coursestartKH.aspx")
+     gulp.src("./coursestart.aspx")
     .pipe(gulp.dest(paths.sp_ptassets_dev));
 });
 
 gulp.task('default', function () {
-   gulp.watch(['*.ts','*.aspx'] , ['push']);
+   gulp.watch(['*.ts','*.html'] , ['push']);
 });
 
 gulp.task('push', function(callback) {

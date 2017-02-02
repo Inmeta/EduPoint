@@ -19,7 +19,7 @@
         </Field>
         <Field ID="{db88f651-2205-4711-8863-50d8e938f9a6}" Type="Boolean" DisplayName="Is created" Name="WorkspaceIsCreated" StaticName="WorkspaceIsCreated" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
         
-        <Field Type="Lookup" DisplayName="Course" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{3a287853-7481-4373-b436-791de44d3463}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Course" Name="Course" AllowDeletion="TRUE"  List="{{listid:Modules}}" />
+        <Field Type="Lookup" DisplayName="Course" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{3a287853-7481-4373-b436-791de44d3463}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Course" Name="Course" AllowDeletion="TRUE"  List="{{listid:Course}}" />
 
         <Field Name="Steplist" FromBaseType="FALSE" Type="Text" DisplayName="Steplist" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{260d1a55-5379-4f62-a7bc-8022b0b15137}" StaticName="Steplist" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" AllowDeletion="TRUE">
         </Field>
