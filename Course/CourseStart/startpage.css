@@ -1,0 +1,135 @@
+.akademietColumn, .text-left {
+	display:inline-grid !important;
+}
+
+#koAkademiet {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#videoWrap,
+#swayWrap,
+#officeWrap {
+	margin: 0 -9999rem;
+	padding: 0.25rem 9999rem;
+	padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
+#videoKnapp > a:hover,
+#swayKnapp > a:hover,
+#officeKnapp > a:hover,
+a.navbar-brand:hover {
+ color:#88BEDC;
+}
+
+/*#videoKnapp,*/
+#videoWrap {
+	background-color: #DAE8F5;
+}
+
+/*#swayKnapp*/
+#swayWrap {
+	background-color: #BAD6EA;
+}
+
+/*#officeKnapp,*/
+#officeWrap {
+	background-color: #88BEDC;
+}
+
+#Video,
+#Sway,
+#Office {
+	background-color: #f6f6f6;
+	padding: 3rem;
+	padding-top: 1rem;
+	border: 0;
+	border-radius: 1rem;
+	margin: 0 0 10rem 0;
+}
+
+.oppigjen {
+	float: right;
+}
+
+.oppigjen a {
+	color: #fff;
+}
+
+.oppigjen .btn-info {
+	font-size: .7em;
+}
+
+.pagination, .dataTables_paginate > ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    word-spacing: -.5px;
+    background: #d6dbdf;
+    border-radius: 6px;
+}
+
+input, button, select, textarea,
+.ms-breadcrumb-top {
+    line-height: initial !important;
+}
+
+.btn-group>.btn-group:last-child>.btn:first-child {
+	border-radius: 5px;
+}
+
+.btn-group>.btn-group:first-child>.btn:last-child, .btn-group>.btn-group:first-child>.dropdown-toggle {
+	border-radius: 5px;
+}
+
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+	background-color: #DAE8F5;
+}
+
+.pagination li.active>a, .pagination li.active>span, .dataTables_paginate li.active>a, .dataTables_paginate li.active>span {
+	background-color: #3498db;
+}
+
+.pagination li.disabled>a, .pagination li.disabled>span, .dataTables_paginate li.disabled>a, .dataTables_paginate li.disabled>span {
+	color: #444;
+}
+
+.startApp {
+	margin: 0 0 2em 0;
+}
+
+.startApp a {
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: #186C94;
+}
+
+.btn-primary:hover {
+	background-color: #88BEDC;
+}
+
+a.dropdown-item.dropdown-item-button:hover {
+background-color: #88BEDC;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+	background-color: #186C94;
+}
+
+.dropdown-menu>li>a {
+    padding: 8px 16px;
+    line-height: 1.429;
+    color: #606d7a;
+    background-color: rgba(202,206,209,.5);
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #55606c;
+    background-color: rgba(202,206,209,.5);
+}
+
+

@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.8.1610.1, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-7F54D80C595F4104B678CD896BCB5EC4">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-7F54D80C595F4104B678CD896BCB5EC4" Version="1" BaseSiteTemplate="BLANKINTERNET#0">
+      <pnp:SiteFields>
+        <Field Type="DateTime" DisplayName="CourseDate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="EduPoint" FriendlyDisplayFormat="Disabled" ID="{1cd56701-553d-4adb-a75d-6013c84eeb99}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseDate" Name="CourseDate" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="Note" DisplayName="BuiltInCode" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" Group="EduPoint" ID="{8470b30a-c308-4faf-8c5f-30b7f7f027d4}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="BuiltInCode" Name="BuiltInCode" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" AllowDeletion="TRUE">
+        </Field>
+        <Field ID="{2e3a9917-ba08-43a7-9a63-8ba5147d555e}" Type="Text" DisplayName="Source Content Type" Name="WebMetadataSourceContentType" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" StaticName="WebMetadataSourceContentType" ShowInEditForm="FALSE" />
+        <Field ID="{3ca2933d-5868-4f60-a35c-0abf4c7ad8e1}" Type="Note" DisplayName="Description" Name="WorkspaceDescription" StaticName="WorkspaceDescription" Group="Workspace Columns" RichTextMode="ThemeHtml" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" />
+        <Field ID="{30be5741-bdb9-40af-8f56-bb4ad5069044}" Type="User" DisplayName="Primary contact" Name="WorkspacePrimaryContact" StaticName="WorkspacePrimaryContact" Required="TRUE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" Description="Who is the main responsible for the site" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" />
+        <Field Name="Swayurl" FromBaseType="FALSE" Type="Note" DisplayName="Swayurl" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="2" RichText="FALSE" Sortable="FALSE" Group="EduPoint" ID="{d9841646-389b-47ab-bf59-80448ef4c809}" StaticName="Swayurl" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}">
+        </Field>
+        <Field ID="{0f905047-0476-4ef9-bf4b-1c5ca9fd02c5}" Type="Boolean" DisplayName="Is approved" Name="WorkspaceIsApproved" StaticName="WorkspaceIsApproved" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="Text" DisplayName="CategoryDescription" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{ab065451-14d6-485a-88c3-414c908d50d3}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CategoryDescription" Name="CategoryDescription" AllowDeletion="TRUE">
+        </Field>
+        <Field ID="{db88f651-2205-4711-8863-50d8e938f9a6}" Type="Boolean" DisplayName="Is created" Name="WorkspaceIsCreated" StaticName="WorkspaceIsCreated" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="Lookup" DisplayName="Course" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{3a287853-7481-4373-b436-791de44d3463}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Course" Name="Course" AllowDeletion="TRUE" />
+        <Field Name="Steplist" FromBaseType="FALSE" Type="Text" DisplayName="Steplist" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{260d1a55-5379-4f62-a7bc-8022b0b15137}" StaticName="Steplist" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="Text" DisplayName="Question" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{c54d2f5a-1a20-42e8-8d00-28d14ea6e39d}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Question" Name="Question" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="User" DisplayName="CourseParticipant" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="EduPoint" ID="{b460a170-5d15-4258-bfa9-f0ddc156c862}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseParticipant" Name="CourseParticipant" AllowDeletion="TRUE" />
+        <Field ID="{627c3a73-d5ef-4bb5-82d0-953b76e7a0d4}" Type="Text" DisplayName="SIte url" Name="WorkspacePermalink" StaticName="WorkspacePermalink" Required="TRUE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" Description="Last part of the final URL" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" />
+        <Field ID="{86eaef7d-0268-45bc-9eda-9a55993a2bb8}" Type="Text" DisplayName="Url" Name="WorkspaceUrl" StaticName="WorkspaceUrl" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="Text" DisplayName="ProjectID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="ASPC" ID="{badfd583-a9e0-4a22-8a2a-612d5f77695b}" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" StaticName="ProjectID" Name="ProjectID">
+        </Field>
+        <Field Type="Choice" DisplayName="CourseCategory" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="EduPoint" ID="{62907097-ad87-4365-a0f4-2a6dbabdab60}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseCategory" Name="CourseCategory" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Blue</CHOICE>
+            <CHOICE>Red</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="ModuleList" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{bf70c8a0-f768-4e57-9dee-6ca6ec51166d}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="ModuleList" Name="ModuleList" AllowDeletion="TRUE">
+        </Field>
+        <Field ID="{044b0fad-940b-4b56-8916-238a33ef3f48}" Type="Text" DisplayName="Workspace definition" Name="WorkspaceDefinition" StaticName="WorkspaceDefinition" Required="TRUE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" JSLink="~site/Style Library/JSLinks/WorkspaceJSFieldBase.js|~site/Style Library/JSLinks/WorkspaceDefinitionsField.js" />
+        <Field Type="Text" DisplayName="Videourl" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{a112b6ad-1f34-49ae-b88d-70550540865c}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Videourl" Name="Videourl">
+        </Field>
+        <Field ID="{dc8815af-a497-4a97-8b88-eedacb5f9720}" Type="Boolean" DisplayName="Is archived" Name="WorkspaceIsArchived" StaticName="WorkspaceIsArchived" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInNewForm="FALSE" />
+        <Field Type="Lookup" DisplayName="ModuleId" Required="FALSE" EnforceUniqueValues="FALSE" WebId="9312ba3c-b437-404a-9a2b-6f48fe67ecb6" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{e666fcb1-ee27-4ef3-a5fe-e9421f54b45c}" SourceID="{9312ba3c-b437-404a-9a2b-6f48fe67ecb6}" StaticName="ModuleId" Name="ModuleId" AllowDeletion="TRUE" List="{{listid:Modules}}" />
+        <Field ID="{a5b8aeb4-b9f7-4e10-b0e3-4561203766ef}" Type="Choice" DisplayName="State" Name="WorkspaceState" StaticName="WorkspaceState" Required="FALSE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE">
+          <CHOICES>
+            <CHOICE>Initialize</CHOICE>
+            <CHOICE>Awaiting approval</CHOICE>
+            <CHOICE>Approved</CHOICE>
+            <CHOICE>Rejected</CHOICE>
+            <CHOICE>Queued</CHOICE>
+            <CHOICE>Provisioning</CHOICE>
+            <CHOICE>Created</CHOICE>
+            <CHOICE>Failed</CHOICE>
+            <CHOICE>Provisioned</CHOICE>
+          </CHOICES>
+          <Default>Initialize</Default>
+        </Field>
+        <Field Type="Text" DisplayName="AnswerAlternative" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{509477b6-c8be-45d5-8f4e-c1bb3584cbff}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="AnswerAlternative" Name="AnswerAlternative" AllowDeletion="TRUE">
+        </Field>
+        <Field Type="UserMulti" DisplayName="CourseParticipants" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="EduPoint" ID="{bcf4cfb9-aac3-49c7-bcca-bc283719bc8a}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseParticipants" Name="CourseParticipants" AllowDeletion="TRUE" />
+        <Field ID="{1da32acc-e88c-4db3-bdca-f1125b35dcbf}" Type="Boolean" DisplayName="Is hidden" Name="WorkspaceIsHidden" StaticName="WorkspaceIsHidden" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" />
+        <Field Type="Boolean" DisplayName="CourseCompleted" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="EduPoint" ID="{f836bcd2-a745-49cf-b630-e89b56853deb}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseCompleted" Name="CourseCompleted" Required="FALSE" AllowDeletion="TRUE">
+          <Default>0</Default>
+        </Field>
+        <Field ID="{aca8bed9-6374-4764-ab1f-003787e2e69a}" Type="Boolean" DisplayName="Marked for deletion" Name="WorkspaceMarkedDeletion" StaticName="WorkspaceMarkedDeletion" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="Text" DisplayName="CorrectAnswer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{1f8e12ef-bb94-41de-a0af-fcab79f603da}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CorrectAnswer" Name="CorrectAnswer" AllowDeletion="TRUE">
+        </Field>
+        <Field ID="{9cfc33ef-6715-4510-8269-05b78f1bb8c8}" Type="Text" DisplayName="Execution Id" Name="WorkspaceExecutionId" StaticName="WorkspaceExecutionId" Required="FALSE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+        <Field ID="{215358f6-f500-4ba4-8315-e2f24180217c}" Type="Text" DisplayName="Source Tenant" Name="WebMetadataSourceTenant" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" StaticName="WebMetadataSourceTenant" ShowInEditForm="FALSE" />
+        <Field Type="HTML" DisplayName="WelcomeText" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="EduPoint" ID="{d302a1ff-27da-4f69-92aa-1271472e02c6}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="WelcomeText" Name="WelcomeText" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100120262B84A5243569282EA6F95E49575" Name="WebMetadataSiteInfo" Description="This content type is used on the WebMetadata SiteInfo list" Group="Workspace Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="215358f6-f500-4ba4-8315-e2f24180217c" Name="WebMetadataSourceTenant" />
+            <pnp:FieldRef ID="2e3a9917-ba08-43a7-9a63-8ba5147d555e" Name="WebMetadataSourceContentType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01002A4BEC42D9B14C6897FA34BA838D8B2C" Name="Workspace Info" Description="Use this content type to build your own content types to associate with the workspace sites. They provide a way for you to add metadata to a workspace site." Group="Workspace Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="db88f651-2205-4711-8863-50d8e938f9a6" Name="WorkspaceIsCreated" />
+            <pnp:FieldRef ID="044b0fad-940b-4b56-8916-238a33ef3f48" Name="WorkspaceDefinition" Required="true" />
+            <pnp:FieldRef ID="3ca2933d-5868-4f60-a35c-0abf4c7ad8e1" Name="WorkspaceDescription" />
+            <pnp:FieldRef ID="627c3a73-d5ef-4bb5-82d0-953b76e7a0d4" Name="WorkspacePermalink" Required="true" />
+            <pnp:FieldRef ID="86eaef7d-0268-45bc-9eda-9a55993a2bb8" Name="WorkspaceUrl" />
+            <pnp:FieldRef ID="30be5741-bdb9-40af-8f56-bb4ad5069044" Name="WorkspacePrimaryContact" Required="true" />
+            <pnp:FieldRef ID="dc8815af-a497-4a97-8b88-eedacb5f9720" Name="WorkspaceIsArchived" />
+            <pnp:FieldRef ID="1da32acc-e88c-4db3-bdca-f1125b35dcbf" Name="WorkspaceIsHidden" />
+            <pnp:FieldRef ID="0f905047-0476-4ef9-bf4b-1c5ca9fd02c5" Name="WorkspaceIsApproved" />
+            <pnp:FieldRef ID="aca8bed9-6374-4764-ab1f-003787e2e69a" Name="WorkspaceMarkedDeletion" />
+            <pnp:FieldRef ID="a5b8aeb4-b9f7-4e10-b0e3-4561203766ef" Name="WorkspaceState" />
+            <pnp:FieldRef ID="9cfc33ef-6715-4510-8269-05b78f1bb8c8" Name="WorkspaceExecutionId" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01002A4BEC42D9B14C6897FA34BA838D8B2C01" Name="aspc project" Description="" Group="ASPC" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="db88f651-2205-4711-8863-50d8e938f9a6" Name="WorkspaceIsCreated" />
+            <pnp:FieldRef ID="044b0fad-940b-4b56-8916-238a33ef3f48" Name="WorkspaceDefinition" Required="true" />
+            <pnp:FieldRef ID="3ca2933d-5868-4f60-a35c-0abf4c7ad8e1" Name="WorkspaceDescription" />
+            <pnp:FieldRef ID="627c3a73-d5ef-4bb5-82d0-953b76e7a0d4" Name="WorkspacePermalink" Required="true" />
+            <pnp:FieldRef ID="86eaef7d-0268-45bc-9eda-9a55993a2bb8" Name="WorkspaceUrl" />
+            <pnp:FieldRef ID="30be5741-bdb9-40af-8f56-bb4ad5069044" Name="WorkspacePrimaryContact" Required="true" />
+            <pnp:FieldRef ID="dc8815af-a497-4a97-8b88-eedacb5f9720" Name="WorkspaceIsArchived" />
+            <pnp:FieldRef ID="1da32acc-e88c-4db3-bdca-f1125b35dcbf" Name="WorkspaceIsHidden" />
+            <pnp:FieldRef ID="0f905047-0476-4ef9-bf4b-1c5ca9fd02c5" Name="WorkspaceIsApproved" />
+            <pnp:FieldRef ID="aca8bed9-6374-4764-ab1f-003787e2e69a" Name="WorkspaceMarkedDeletion" />
+            <pnp:FieldRef ID="a5b8aeb4-b9f7-4e10-b0e3-4561203766ef" Name="WorkspaceState" />
+            <pnp:FieldRef ID="9cfc33ef-6715-4510-8269-05b78f1bb8c8" Name="WorkspaceExecutionId" />
+            <pnp:FieldRef ID="badfd583-a9e0-4a22-8a2a-612d5f77695b" Name="ProjectID" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x010052DEDAECBFF4CE43B3318B3B792C1886" Name="ParticipantsProgression" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="b460a170-5d15-4258-bfa9-f0ddc156c862" Name="CourseParticipant" />
+            <pnp:FieldRef ID="e666fcb1-ee27-4ef3-a5fe-e9421f54b45c" Name="ModuleId" />
+            <pnp:FieldRef ID="f836bcd2-a745-49cf-b630-e89b56853deb" Name="CourseCompleted" />
+            <pnp:FieldRef ID="3a287853-7481-4373-b436-791de44d3463" Name="Course" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x010057F09203B5617041A4615970A33D566A" Name="Module" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="260d1a55-5379-4f62-a7bc-8022b0b15137" Name="Steplist" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A245" Name="Course" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A24501" Name="Step" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A2450101" Name="StartStep" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A2450102" Name="QuestionStep" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="c54d2f5a-1a20-42e8-8d00-28d14ea6e39d" Name="Question" />
+            <pnp:FieldRef ID="509477b6-c8be-45d5-8f4e-c1bb3584cbff" Name="AnswerAlternative" />
+            <pnp:FieldRef ID="1f8e12ef-bb94-41de-a0af-fcab79f603da" Name="CorrectAnswer" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A2450103" Name="SwayStep" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="8470b30a-c308-4faf-8c5f-30b7f7f027d4" Name="BuiltInCode" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A2450104" Name="VideoStep" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="8470b30a-c308-4faf-8c5f-30b7f7f027d4" Name="BuiltInCode" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x01006C6EEF9435BB0742A018A65181D7A2450105" Name="OfficeStep" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" />
+            <pnp:FieldRef ID="8470b30a-c308-4faf-8c5f-30b7f7f027d4" Name="BuiltInCode" />
+            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100CEA6EB9E6DA1034E8862A6D8734D5C95" Name="CoursePlanner" Description="" Group="EduPoint CTs" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="bcf4cfb9-aac3-49c7-bcca-bc283719bc8a" Name="CourseParticipants" />
+            <pnp:FieldRef ID="1cd56701-553d-4adb-a75d-6013c84eeb99" Name="CourseDate" />
+            <pnp:FieldRef ID="3a287853-7481-4373-b436-791de44d3463" Name="Course" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100DDEB1276D4364A67858F002D9F176712" Name="WebMetadataSiteInfoWrite" Description="This content type is used on the WebMetadata WriteAcces list" Group="Workspace Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="215358f6-f500-4ba4-8315-e2f24180217c" Name="WebMetadataSourceTenant" />
+            <pnp:FieldRef ID="2e3a9917-ba08-43a7-9a63-8ba5147d555e" Name="WebMetadataSourceContentType" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0108003365C4474CAE8C42BCE396314E88E51F00EC744AD16B86432F8DDA7FC185956329" Name="Nintex Task Outcome Content Type" Description="This content type is for use by Nintex Workflow for Office 365 and it should not be altered." Group="Nintex Workflow for Office 365" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="StartDate" />
+            <pnp:FieldRef ID="cd21b4c2-6841-4f9e-a23a-738a65f99889" Name="DueDate" />
+            <pnp:FieldRef ID="53101f38-dd2e-458c-b245-0c236cc13d1a" Name="AssignedTo" />
+            <pnp:FieldRef ID="d2311440-1ed6-46ea-b46d-daa643dc3886" Name="PercentComplete" />
+            <pnp:FieldRef ID="7662cd2c-f069-4dba-9e35-082cf976e170" Name="Body" />
+            <pnp:FieldRef ID="c3a92d97-2b77-4a25-9698-3ab54874bc6f" Name="Predecessors" />
+            <pnp:FieldRef ID="a8eb573e-9e11-481a-a8c9-1104a54b2fbd" Name="Priority" />
+            <pnp:FieldRef ID="c15b34c3-ce7d-490a-b133-3f4de8801b76" Name="Status" />
+            <pnp:FieldRef ID="d2a04afc-9a05-48c8-a7fa-fa98f9496141" Name="RelatedItems" />
+            <pnp:FieldRef ID="1f30d200-0d4e-4c8a-a7eb-2e49815bf2be" Name="WorkflowInstanceId" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0108003365C4474CAE8C42BCE396314E88E51F00EC744AD16B86432F8DDA7FC18595632900F2E36FBF209941439BB26742344565A9" Name="Nintex Form Task Outcome Content Type" Description="This content type is for use by Nintex Workflow for Office 365 and it should not be altered." Group="Nintex Forms for Office 365" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="StartDate" />
+            <pnp:FieldRef ID="cd21b4c2-6841-4f9e-a23a-738a65f99889" Name="DueDate" />
+            <pnp:FieldRef ID="53101f38-dd2e-458c-b245-0c236cc13d1a" Name="AssignedTo" />
+            <pnp:FieldRef ID="d2311440-1ed6-46ea-b46d-daa643dc3886" Name="PercentComplete" />
+            <pnp:FieldRef ID="7662cd2c-f069-4dba-9e35-082cf976e170" Name="Body" />
+            <pnp:FieldRef ID="c3a92d97-2b77-4a25-9698-3ab54874bc6f" Name="Predecessors" />
+            <pnp:FieldRef ID="a8eb573e-9e11-481a-a8c9-1104a54b2fbd" Name="Priority" />
+            <pnp:FieldRef ID="c15b34c3-ce7d-490a-b133-3f4de8801b76" Name="Status" />
+            <pnp:FieldRef ID="d2a04afc-9a05-48c8-a7fa-fa98f9496141" Name="RelatedItems" />
+            <pnp:FieldRef ID="1f30d200-0d4e-4c8a-a7eb-2e49815bf2be" Name="WorkflowInstanceId" />
+            <pnp:FieldRef ID="52578fc3-1f01-4f4d-b016-94ccbcf428cf" Name="_Comments" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Course" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Course" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A245" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6D0A9B4A-F3FD-4115-BA57-88755E8ECF4B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/course/Lists/Course/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" DisplayName="CategoryDescription" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" DisplayName="ModuleList" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" Required="true" DisplayName="CourseCategory" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Courseapp" Description="" DocumentTemplate="{site}/Courseapp/Forms/template.dotx" TemplateType="101" Url="Courseapp" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3370C163-840F-4589-A211-1AD8E9B0C0AE}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/course/Courseapp/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b" Name="CheckoutUser" DisplayName="Sjekket ut til" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Beskyttelseshandling" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Beskyttelseskode" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Beskyttelseskode endret" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="ID-en til brukeren som har angitt beskyttelseskoden" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Oppføring" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Courseappdocuments" Description="" DocumentTemplate="{site}/Courseappdocuments/Forms/template.dotx" TemplateType="101" Url="Courseappdocuments" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{2EBF8320-6089-41D5-A7D5-5F303C0C306E}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/course/Courseappdocuments/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b" Name="CheckoutUser" DisplayName="Sjekket ut til" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Beskyttelseshandling" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Beskyttelseskode" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Beskyttelseskode endret" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="ID-en til brukeren som har angitt beskyttelseskoden" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Oppføring" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Courseappdocuments2" Description="" DocumentTemplate="{site}/Courseappdocuments2/Forms/template.dotx" TemplateType="101" Url="Courseappdocuments2" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9868F3D7-EE4F-4610-8297-1A62315FEA27}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/course/Courseappdocuments2/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b" Name="CheckoutUser" DisplayName="Sjekket ut til" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Beskyttelseshandling" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Beskyttelseskode" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Beskyttelseskode endret" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="ID-en til brukeren som har angitt beskyttelseskoden" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Oppføring" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="CoursePlanner" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/CoursePlanner" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100CEA6EB9E6DA1034E8862A6D8734D5C95" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Fields>
+            <Field DisplayName="CourseInitiator" Type="URL" Required="FALSE" ID="{a85c9002-61ec-4460-9c4d-a404b7e50b7c}" SourceID="{{listid:CoursePlanner}}" StaticName="CourseInitiator" Name="CourseInitiator" ColName="nvarchar3" RowOrdinal="0" ColName2="nvarchar4" RowOrdinal2="0" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Version="7" />
+            <Field DisplayName="Courseinitiation" Type="URL" Required="FALSE" ID="{8af1368d-ca98-46f9-9da2-9bfe26d77de2}" SourceID="{{listid:CoursePlanner}}" StaticName="Courseinitiation" Name="Courseinitiation" ColName="nvarchar5" RowOrdinal="0" ColName2="nvarchar6" RowOrdinal2="0" Version="2" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="bcf4cfb9-aac3-49c7-bcca-bc283719bc8a" Name="CourseParticipants" DisplayName="CourseParticipants" />
+            <pnp:FieldRef ID="1cd56701-553d-4adb-a75d-6013c84eeb99" Name="CourseDate" DisplayName="CourseDate" />
+            <pnp:FieldRef ID="3a287853-7481-4373-b436-791de44d3463" Name="Course" DisplayName="Course" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Modules" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Modules" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010057F09203B5617041A4615970A33D566A" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{B901AA2F-96CE-41C2-A26E-F34C51E56659}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/course/Lists/Modules/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" DisplayName="Beskrivelse" />
+            <pnp:FieldRef ID="260d1a55-5379-4f62-a7bc-8022b0b15137" Name="Steplist" DisplayName="Steplist" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" Required="true" DisplayName="CourseCategory" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="ParticipantsProgression" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/ParticipantsProgression" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010052DEDAECBFF4CE43B3318B3B792C1886" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{EA55F320-0411-4342-B60C-FC1CB29F8F41}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/course/Lists/ParticipantsProgression/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Lookup" DisplayName="CourseId" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{07536473-dfd5-4551-8cdc-551cac0bee3a}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseId" Name="CourseId" AllowDeletion="TRUE" List="{listid:Course}" Version="10" ColName="int3" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="CoursePlannerID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{7d56f037-4c5d-46d3-8cfd-815bc27e3e28}" SourceID="{{listid:ParticipantsProgression}}" StaticName="CourseId" Name="CourseId0" ColName="nvarchar3" RowOrdinal="0" Version="7" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="b460a170-5d15-4258-bfa9-f0ddc156c862" Name="CourseParticipant" DisplayName="CourseParticipant" />
+            <pnp:FieldRef ID="e666fcb1-ee27-4ef3-a5fe-e9421f54b45c" Name="ModuleId" DisplayName="ModuleId" />
+            <pnp:FieldRef ID="f836bcd2-a745-49cf-b630-e89b56853deb" Name="CourseCompleted" DisplayName="CourseCompleted" />
+            <pnp:FieldRef ID="1cd56701-553d-4adb-a75d-6013c84eeb99" Name="CourseDate" DisplayName="CourseDate" />
+            <pnp:FieldRef ID="3a287853-7481-4373-b436-791de44d3463" Name="Course" DisplayName="Course" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="PTAssets" Description="" DocumentTemplate="{site}/PTAssets/Forms/template.dotx" TemplateType="101" Url="PTAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3DE3800A-1B1B-428E-A7D0-D86FE52902F4}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="/sites/course/PTAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b" Name="CheckoutUser" DisplayName="Checked Out To" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Protection Action" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Protection Tag" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Protection Tag Modified" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="ID of the User who has the Set the Protection Tag" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Record" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Step" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Step" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A2450102" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A2450103" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A2450104" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A2450105" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01006C6EEF9435BB0742A018A65181D7A2450101" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{1F57758F-7C29-4E5A-828A-D547C790DCE1}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/course/Lists/Step/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="AnswerAlternative" />
+                <FieldRef Name="CorrectAnswer" />
+                <FieldRef Name="CourseCategory" />
+                <FieldRef Name="ModuleList" />
+                <FieldRef Name="Question" />
+                <FieldRef Name="ContentType" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c54d2f5a-1a20-42e8-8d00-28d14ea6e39d" Name="Question" DisplayName="Question" />
+            <pnp:FieldRef ID="509477b6-c8be-45d5-8f4e-c1bb3584cbff" Name="AnswerAlternative" DisplayName="AnswerAlternative" />
+            <pnp:FieldRef ID="1f8e12ef-bb94-41de-a0af-fcab79f603da" Name="CorrectAnswer" DisplayName="CorrectAnswer" />
+            <pnp:FieldRef ID="ab065451-14d6-485a-88c3-414c908d50d3" Name="CategoryDescription" DisplayName="CategoryDescription" />
+            <pnp:FieldRef ID="62907097-ad87-4365-a0f4-2a6dbabdab60" Name="CourseCategory" Required="true" DisplayName="CourseCategory" />
+            <pnp:FieldRef ID="bf70c8a0-f768-4e57-9dee-6ca6ec51166d" Name="ModuleList" DisplayName="ModuleList" />
+            <pnp:FieldRef ID="c29e077d-f466-4d8e-8bbe-72b66c5f205c" Name="URL" DisplayName="URL" />
+            <pnp:FieldRef ID="8470b30a-c308-4faf-8c5f-30b7f7f027d4" Name="BuiltInCode" Required="true" DisplayName="BuiltInCode" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Workflow History" Description="" DocumentTemplate="" TemplateType="140" Url="Lists/Workflow History" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-4ea5-48d4-a4ad-305cf7030140" ContentTypesEnabled="true" Hidden="true" EnableAttachments="false" EnableFolderCreation="false">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0109" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7AE780D0-FA55-4DC2-AC7E-C40496800011}" DefaultView="TRUE" Type="HTML" DisplayName="All History" Url="/sites/course/Lists/Workflow History/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Occurred" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="WorkflowInstance" />
+                <FieldRef Name="WorkflowAssociation" />
+                <FieldRef Name="WorkflowTemplate" />
+                <FieldRef Name="List" />
+                <FieldRef Name="Item" />
+                <FieldRef Name="User" />
+                <FieldRef Name="Occurred" />
+                <FieldRef Name="Event" />
+                <FieldRef Name="Group" />
+                <FieldRef Name="Outcome" />
+                <FieldRef Name="Duration" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Data" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="20a1a5b1-fddf-4420-ac68-9701490e09af" Name="Event" Required="true" DisplayName="Event Type" />
+            <pnp:FieldRef ID="de21c770-a12b-4f88-af4b-aeebd897c8c2" Name="WorkflowInstance" Required="true" DisplayName="Workflow History Parent Instance" />
+            <pnp:FieldRef ID="8d426880-8d96-459b-ae48-e8b3836d8b9d" Name="WorkflowAssociation" Required="true" DisplayName="Workflow Association ID" />
+            <pnp:FieldRef ID="bfb1589e-2016-4b98-ae62-e91979c3224f" Name="WorkflowTemplate" Required="true" DisplayName="Workflow Template ID" />
+            <pnp:FieldRef ID="f44e428b-61c8-4100-a911-a3a635f43bb5" Name="List" Required="true" DisplayName="List ID" />
+            <pnp:FieldRef ID="92b8e9d0-a11b-418f-bf1c-c44aaa73075d" Name="Item" DisplayName="Primary Item ID" />
+            <pnp:FieldRef ID="5928ff1f-daa1-406c-b4a9-190485a448cb" Name="User" Required="true" DisplayName="User ID" />
+            <pnp:FieldRef ID="5602dc33-a60a-4dec-bd23-d18dfcef861d" Name="Occurred" Required="true" DisplayName="Date Occurred" />
+            <pnp:FieldRef ID="c86a2f7f-7680-4a0b-8907-39c4f4855a35" Name="Group" DisplayName="Group Type" />
+            <pnp:FieldRef ID="dcde7b1f-918b-4ed5-819f-9798f8abac37" Name="Outcome" DisplayName="Outcome" />
+            <pnp:FieldRef ID="4d54445d-1c84-4a6d-b8db-a51ded4e1acc" Name="Duration" DisplayName="Duration" />
+            <pnp:FieldRef ID="2fd53156-ff9d-4cc3-b0ac-fe8a7bc82283" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="38269294-165e-448a-a6b9-f0e09688f3f9" Name="Data" DisplayName="Data" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
