@@ -19,7 +19,7 @@ gulp.task("distribute", function() {
     .pipe(gulp.dest(paths.dev));
     gulp.src("./bundle.js")
     .pipe(gulp.dest(paths.dev));
-     gulp.src("./coursestart.aspx")
+     gulp.src("./coursestartKH.aspx")
     .pipe(gulp.dest(paths.sp_ptassets_dev));
 });
 
