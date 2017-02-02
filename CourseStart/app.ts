@@ -8,10 +8,11 @@ import * as _ from "underscore";
 
 
 var viewModel = {
-	    videos: ko.observableArray(),
-	    docs: ko.observableArray(),
-	    sways: ko.observableArray()
-	};
+    videos: ko.observableArray(),
+    docs: ko.observableArray(),
+    sways: ko.observableArray()
+};
+
 function start() {
     pnp.sp.web.lists.getByTitle("Step").items.select("Title,CourseCategory,URL,ContentTypeId,ContentType/Id,ContentType/Name").expand("ContentType").get().then(function (items) {
         _.each(items, function (item:any, index) {
@@ -23,4 +24,5 @@ function start() {
         ko.applyBindings(viewModel, document.getElementById("koCourse"));
     });
 }
+
 start();
