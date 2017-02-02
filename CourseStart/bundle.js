@@ -60,15 +60,6 @@
 	                viewModel.videos.push(item);
 	            }
 	        });
-	        // var videos = $.grep(items, function (itemm:any, i) {
-	        //     return n.ContentType.Name == "Videosteg";
-	        // });
-	        // var sways = $.grep(items, function (n:any, i) {
-	        //     return n.ContentType.Name == "Swaysteg";
-	        // });
-	        // var docs = $.grep(items, function (n:any, i) {
-	        //     return n.ContentType.Name == "Officesteg";
-	        // });
 	        ko.applyBindings(viewModel, document.getElementById("koCourse"));
 	    });
 	}

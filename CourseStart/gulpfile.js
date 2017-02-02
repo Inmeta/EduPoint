@@ -4,7 +4,7 @@ var gulpSequence = require('gulp-sequence');
 var watch = require('gulp-watch');
 var paths = {   
     sp_ptassets_dev:"Q:\\", 
-    dev:"Q:\\Apps\\Dashboard", 
+    dev:"Q:\\Apps\\CourseStart", 
   
 }
 
@@ -24,7 +24,7 @@ gulp.task("distribute", function() {
 });
 
 gulp.task('default', function () {
-   gulp.watch(['*.ts','*.html'] , ['push']);
+   gulp.watch(['*.ts','*.aspx'] , ['push']);
 });
 
 gulp.task('push', function(callback) {
