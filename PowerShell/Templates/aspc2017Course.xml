@@ -3,7 +3,8 @@
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.8.1610.1, Culture=neutral, PublicKeyToken=3751622786b357c2" />
   <pnp:Templates ID="CONTAINER-TEMPLATE-7F54D80C595F4104B678CD896BCB5EC4">
     <pnp:ProvisioningTemplate ID="TEMPLATE-7F54D80C595F4104B678CD896BCB5EC4" Version="1" BaseSiteTemplate="BLANKINTERNET#0">
-      <!--<pnp:SiteFields>
+      <pnp:SiteFields>
+
         <Field Type="DateTime" DisplayName="CourseDate" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="EduPoint" FriendlyDisplayFormat="Disabled" ID="{1cd56701-553d-4adb-a75d-6013c84eeb99}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseDate" Name="CourseDate" AllowDeletion="TRUE">
         </Field>
         <Field Type="Note" DisplayName="BuiltInCode" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" Group="EduPoint" ID="{8470b30a-c308-4faf-8c5f-30b7f7f027d4}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="BuiltInCode" Name="BuiltInCode" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" AllowDeletion="TRUE">
@@ -17,7 +18,9 @@
         <Field Type="Text" DisplayName="CategoryDescription" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{ab065451-14d6-485a-88c3-414c908d50d3}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CategoryDescription" Name="CategoryDescription" AllowDeletion="TRUE">
         </Field>
         <Field ID="{db88f651-2205-4711-8863-50d8e938f9a6}" Type="Boolean" DisplayName="Is created" Name="WorkspaceIsCreated" StaticName="WorkspaceIsCreated" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
-        <Field Type="Lookup" DisplayName="Course" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{3a287853-7481-4373-b436-791de44d3463}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Course" Name="Course" AllowDeletion="TRUE" />
+        
+        <Field Type="Lookup" DisplayName="Course" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{3a287853-7481-4373-b436-791de44d3463}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Course" Name="Course" AllowDeletion="TRUE"  List="{{listid:Modules}}" />
+
         <Field Name="Steplist" FromBaseType="FALSE" Type="Text" DisplayName="Steplist" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{260d1a55-5379-4f62-a7bc-8022b0b15137}" StaticName="Steplist" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" AllowDeletion="TRUE">
         </Field>
         <Field Type="Text" DisplayName="Question" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="EduPoint" ID="{c54d2f5a-1a20-42e8-8d00-28d14ea6e39d}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="Question" Name="Question" AllowDeletion="TRUE">
@@ -67,8 +70,8 @@
         <Field ID="{9cfc33ef-6715-4510-8269-05b78f1bb8c8}" Type="Text" DisplayName="Execution Id" Name="WorkspaceExecutionId" StaticName="WorkspaceExecutionId" Required="FALSE" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" ShowInEditForm="FALSE" ShowInNewForm="FALSE" />
         <Field ID="{215358f6-f500-4ba4-8315-e2f24180217c}" Type="Text" DisplayName="Source Tenant" Name="WebMetadataSourceTenant" Group="Workspace Columns" SourceID="{1a1f2941-35ec-4f21-b065-bb9d93dfe033}" StaticName="WebMetadataSourceTenant" ShowInEditForm="FALSE" />
         <Field Type="HTML" DisplayName="WelcomeText" RichText="TRUE" RichTextMode="ThemeHtml" Required="FALSE" Group="EduPoint" ID="{d302a1ff-27da-4f69-92aa-1271472e02c6}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="WelcomeText" Name="WelcomeText" />
-      </pnp:SiteFields>-->
-      <!--<pnp:ContentTypes>
+      </pnp:SiteFields>      
+      <pnp:ContentTypes>
         <pnp:ContentType ID="0x0100120262B84A5243569282EA6F95E49575" Name="WebMetadataSiteInfo" Description="This content type is used on the WebMetadata SiteInfo list" Group="Workspace Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
           <pnp:FieldRefs>
             <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
@@ -255,7 +258,7 @@
             <pnp:FieldRef ID="52578fc3-1f01-4f4d-b016-94ccbcf428cf" Name="_Comments" />
           </pnp:FieldRefs>
         </pnp:ContentType>
-      </pnp:ContentTypes>-->
+      </pnp:ContentTypes>
       <pnp:Lists>
         <pnp:ListInstance Title="Course" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Course" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false">
           <pnp:ContentTypeBindings>
@@ -346,8 +349,7 @@
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Fields>
-            <Field Type="Lookup" DisplayName="CourseId" Required="FALSE" EnforceUniqueValues="FALSE" WebId="6ca56f93-9af1-41b2-95ee-906b70f787b2" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" Group="EduPoint" ID="{07536473-dfd5-4551-8cdc-551cac0bee3a}" SourceID="{6ca56f93-9af1-41b2-95ee-906b70f787b2}" StaticName="CourseId" Name="CourseId" AllowDeletion="TRUE" List="{listid:Course}" Version="10" ColName="int3" RowOrdinal="0" />
-            <Field Type="Text" DisplayName="CoursePlannerID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{7d56f037-4c5d-46d3-8cfd-815bc27e3e28}" SourceID="{{listid:ParticipantsProgression}}" StaticName="CourseId" Name="CourseId0" ColName="nvarchar3" RowOrdinal="0" Version="7" />
+            <pnp:FieldRef ID="3a287853-7481-4373-b436-791de44d3463" Name="Course" DisplayName="Course" />
           </pnp:Fields>
           <pnp:FieldRefs>
             <pnp:FieldRef ID="b460a170-5d15-4258-bfa9-f0ddc156c862" Name="CourseParticipant" DisplayName="CourseParticipant" />
