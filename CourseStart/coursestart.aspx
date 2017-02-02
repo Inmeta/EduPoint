@@ -11,11 +11,11 @@
 <script type="text/javascript" src="/_layouts/15/sp.js"></script>
 <script type="text/javascript" src="/_layouts/15/sp.ui.controls.js"></script>
 <script type="text/javascript" src="/_layouts/15/sp.taxonomy.js"></script>
+<script type="text/javascript" src="/PTAssets/js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="/PTAssets/js/fetch.js"></script>
+<script type="text/javascript" src="/PTAssets/js/es6-promise.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/js/jquery-3.1.0.min.js"></script>
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/js/fetch.js"></script>
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/js/es6-promise.min.js"></script>
 
 <!-- Basic Page Needs
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,12 +32,12 @@
 
 
 <!-- <script type="text/javascript" src="/ptassets/apps/Flat-UI-Pro-1.3.2/dist/js/vendor/bootstrap.min.js"></script> -->
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/apps/common/knockout-3.3.0.js"></script>
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/jquery.bootgrid-1.3.1/jquery.bootgrid.min.js"></script>
-<script src="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/jquery.bootgrid-1.3.1/jquery.bootgrid.fa.min.js"></script>
+<script type="text/javascript" src="/ptassets/apps/common/knockout-3.3.0.js"></script>
+<script type="text/javascript" src="/ptassets/apps/jquery.bootgrid-1.3.1/jquery.bootgrid.min.js"></script>
+<script type="text/javascript" src="/ptassets/apps/jquery.bootgrid-1.3.1/jquery.bootgrid.fa.min.js"></script>
 <!-- <script type="text/javascript" src="/ptassets/apps/Flat-UI-Pro-1.3.2/dist/js/flat-ui-pro.min.js"></script> -->
 <script type="text/javascript" src="../ptassets/apps/coursestart/bundle.js"></script>
-<link rel="stylesheet" type="text/css" href="https://publiccdn.sharepointonline.com/aspc2017.sharepoint.com/19410040ddefe8a3f31e62b812d792bb9896002f1f04580314d67b2df12b4b4d43b1bcb1/apps/jquery.bootgrid-1.3.1/jquery.bootgrid.min.css" />
+<link rel="stylesheet" type="text/css" href="/ptassets/apps/jquery.bootgrid-1.3.1/jquery.bootgrid.min.css" />
 <link rel="stylesheet" type="text/css" href="../ptassets/apps/coursestart/startpage.css" />
  <nav>
     <div class="nav-wrapper">
@@ -71,11 +71,7 @@
 					</thead>
 					<tbody data-bind="foreach: videos" class="grid-activity"> 				
 						<tr class="table table-bordered">
-							<td style="display:inline-grid !important;">
-								<a class="" data-bind="attr { href: URL.Url}">
-									<span data-bind="text:  URL ? URL.Description + '|' + URL.Url : 'Ingen url' "></span>
-								</a>
-							</td>
+							<td style="display:inline-grid !important;"><a class="" data-bind="attr { href: URL.Url}"><span data-bind="text:  URL ? URL.Description + '|' + URL.Url : 'Ingen url' "></span></a></td>
 							<td style="display:inline-grid !important;"><span data-bind="text: CourseCategory"></span></td>
 						</tr>
 					</tbody>
